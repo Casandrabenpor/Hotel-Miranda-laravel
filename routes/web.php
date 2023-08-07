@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Contact;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/contact', [ContactController::class, 'showContact']);
+Route::post('/contact', [ContactController::class, 'postContact']);
+Route::get('/about', [AboutController::class, 'showAbout']);
+Route::get('/offer', [OfferController::class, 'showOffer']);
+Route::get('/room', [RoomController::class, 'showRoom']);
