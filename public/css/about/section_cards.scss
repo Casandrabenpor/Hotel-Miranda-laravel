@@ -1,0 +1,37 @@
+#section_some_fun {
+  margin-top: 8%;
+  max-width: 600px;
+  padding: 1.7rem;
+}
+
+.section__cards-some {
+  padding: 2rem;
+
+}
+.image__counter{
+  width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  #section_some_fun {
+    margin-top: 3%;
+    margin-left: 15%;
+  }
+
+  .section__cards {
+    display: flex;
+  }
+
+  .section__cards-some {
+    padding-right: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .section_image-flex{
+    display: flex;
+    flex-direction: row;
+    width: 150%;
+    gap: 2em;
+  }
+}

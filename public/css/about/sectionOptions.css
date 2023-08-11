@@ -1,0 +1,141 @@
+@charset "UTF-8";
+.section_options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.7rem;
+}
+.section_options .video {
+  width: 100%;
+}
+.section_options .section_text {
+  margin-top: 5%;
+  max-width: 500px;
+}
+.section_options .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.section_options .section_cards {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section_options .section_cards:hover {
+  background-color: #BEAD8E;
+  color: white;
+}
+.section_options .section_cards:hover .text-black {
+  color: white;
+}
+.section_options .section_cards:hover img {
+  filter: brightness(155%) sepia(1);
+  background-color: rgba(226, 224, 135, 0);
+}
+.section_options .icon-about {
+  filter: invert(0.45) sepia(1);
+}
+.section_options .card__none {
+  display: none;
+}
+.section_options .section_restaurant {
+  margin-top: 8%;
+}
+
+.section_image {
+  background: #DADADA;
+  width: 95%;
+  height: 40vh;
+  max-width: 600px;
+  position: relative;
+  margin-top: 5%;
+  margin: auto;
+}
+
+.section_image-burguer {
+  width: 100%;
+  height: 75vh;
+}
+
+.heartbeat {
+  /* Estilos iniciales sin animación */
+  transform: scale(1);
+  transform-origin: center center;
+  animation: none;
+  /* Evita que la animación se reproduzca automáticamente */
+  /* Aplica la animación al pasar el mouse */
+  transition: transform 0.3s ease-in-out;
+}
+
+.heartbeat:hover {
+  /* Establece los estilos de animación al pasar el mouse */
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@keyframes heartbeat {
+  /* Definición de la animación */
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .section_options .video {
+    width: 215%;
+    height: 40vh;
+    margin-left: -65%;
+  }
+  .section_options .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+  }
+  .section_options .section_cards {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .section_options .section_cards img {
+    width: 4rem;
+  }
+  .section_options .card__none {
+    display: block;
+  }
+  .image_restaurant {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurant-section {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .section__text-button {
+    margin-left: 0%;
+  }
+  .section_image-burguer {
+    width: 50%;
+    height: 75vh;
+  }
+}/*# sourceMappingURL=sectionOptions.css.map */

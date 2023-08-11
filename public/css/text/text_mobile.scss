@@ -1,0 +1,639 @@
+//HOME
+.text__title {
+    height: 100%;
+    position: relative;
+}
+
+.title__header {
+    top: 35%;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.section__text-calendar {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0px;
+    margin-left: 2%;
+}
+
+.small__title-home {
+    font-family: 'Archivo';
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 2.799999952316284px;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+.big__title-home {
+    font-family: "Old Standard TT";
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -1.2000000476837158px;
+    margin-bottom: 5%;
+
+}
+
+.big__title-home-menu {
+    font-family: "Old Standard TT";
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -1.2000000476837158px;
+}
+
+.paragraph__home {
+    font-family: 'Archivo';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.text__about-cards {
+    font-family: "Old Standard TT";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.8999999761581421px;
+    color: #111111;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.paragraph__about-cards {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #111111;
+    text-align: center;
+    width: 13rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small__title-homeSecond {
+    font-family: 'Archivo';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 2.799999952316284px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.text-icon-about {
+    font-family: "Archivo";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 2.4000000953674316px;
+
+
+}
+
+.text__room-price-home {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+
+}
+
+.text__video-home {
+    font-family: 'Archivo';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 2.799999952316284px;
+
+}
+
+.text__video-titleHome {
+    font-family: "Old Standard TT";
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -1.2000000476837158px;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.text__video-paragraph {
+    font-family: 'Archivo';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+
+h1 {
+    font-family: "Old Standard TT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+}
+
+h5 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 2.8px;
+    color: #FFFFFF;
+}
+
+//
+.page__text {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: -0.48px;
+    text-align: center;
+
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-black {
+    color: #222222;
+}
+
+.text-gray {
+    color: #BEAD8E;
+}
+
+.text-line {
+    text-decoration-line: line-through;
+}
+
+.text-gray-color {
+    color: #777777;
+
+}
+
+.text-pink {
+    color: #DE5777;
+
+}
+
+.text_video {
+    font-family: "Old Standard TT";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -1.16;
+    text-align: center;
+    color: #222222;
+
+}
+
+.text__small-section {
+    font-family: 'Archivo';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-align: left;
+    color: #777777;
+    margin-left: 2%;
+
+}
+
+.text__big-section {
+    font-family: "Old Standard TT";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 49px;
+    letter-spacing: -1.05px;
+    text-align: left;
+    color: #222222;
+    margin-top: 2rem;
+}
+
+.text__small-section-paragraph {
+    font-family: 'Archivo';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 2rem;
+
+}
+
+.text_button {
+    font-family: 'Archivo';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 2.799999952316284px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text__features {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 2%;
+
+}
+
+.text__title-features {
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 60px;
+    /* identical to box height, or 107% */
+
+    letter-spacing: -1.2px;
+    margin-top: 5%;
+    color: #FFFFFF;
+}
+
+.text-core-features__pretitle {
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.9px;
+    padding-top: 8%;
+
+}
+
+.text-core-features__paragraph {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 2%;
+
+
+}
+
+.text__counter-title {
+    font-family: Old Standard TT;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -1.2000000476837158px;
+    text-align: left;
+}
+
+.text__counter-number {
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -1.8px;
+    color: #222222;
+
+}
+
+.text__footer-paragraph {
+    font-family: ' Archivo';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.text__options {
+    font-family: "Old Standard TT";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 5%;
+}
+
+.text__footer-services {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.text__copyright {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -0.48;
+    text-align: left;
+    margin-top: 5%;
+
+}
+
+// text room
+.text__room-title {
+    font-family: "Old Standard TT";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.7200000286102295px;
+    margin-top: 10%;
+
+}
+
+.text__room-paragraph {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin-top: 2%;
+}
+
+.text__room-price {
+    font-family: 'Archivo';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0px;
+    margin-top: 5%;
+
+
+}
+
+.text__room-booking {
+    font-family: 'Archivo';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0px;
+    color: #BDBDBD;
+    margin-top: 5%;
+
+    a {
+        color: #BDBDBD;
+        border-bottom: none;
+    }
+
+}
+
+//OFFERS
+.text__gallery-title {
+    font-family: " Old Standard TT";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -1.440000057220459px;
+
+
+}
+
+.text__gallery-paragraph {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.text_gallery-price {
+    font-family: "Archivo";
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: right;
+}
+
+.text_gallery-price-night {
+    font-family: "Archivo";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0px;
+    text-align: right;
+}
+
+.text__golden-popular {
+    font-family: "Archivo";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 2.799999952316284px;
+    padding: 5%;
+}
+
+.text__popular-title {
+    font-family: "Old Standard TT";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -0.800000011920929px;
+}
+
+//Contact
+.text__title-contact {
+    font-family: "Old Standard TT";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+
+
+}
+
+.text__date-contact {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+
+
+}
+
+//Rooms Details
+.text__number-room-details {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+
+}
+
+.text__small-bold {
+    font-family: 'Archivo';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.5400000214576721px;
+    margin-top: 10%;
+}
+
+.text__check {
+    font-family: 'Archivo';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.text__details-paragraph {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin-top: 10%;
+    max-width: 700px;
+    padding: 1rem;
+}
+
+.text__title-amenieties {
+    font-family: "Old Standard TT";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 10%;
+}
+
+.section__list-amenities {
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+}
+
+.section__name-person {
+    font-family: "Old Standard TT";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.8999999761581421px;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.section__name-data {
+    font-family: 'Archivo';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 2.799999952316284px;
+    color: #BDAC8D;
+    margin-top: 1.5rem;
+
+}
+
+.section__name-paragraph {
+    font-family: 'Archivo';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 1.5rem;
+
+}
+
+.section__cancellation {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin-top: 1.5rem;
+
+}
+
+.menu__food-text {
+    font-family: "Old Standard TT";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.7200000286102295px;
+}
+
+.menu__food-data {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.background__number {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 136.4%;
+    text-align: center;
+}
+
+.background__data {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #999999;
+}
+
+.operator__small {
+    font-size: 2rem;
+    font-weight: 400;
+}

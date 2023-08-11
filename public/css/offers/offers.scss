@@ -1,0 +1,114 @@
+.section__gallery-luxury {
+  margin-left: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 3em;
+  align-items: center;
+}
+
+.section__gallery-price {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  background-color: rgba(17, 17, 17, 0.5);
+  gap: 1em;
+  margin-top: -8em;
+  margin-left: 48%;
+}
+
+.section_image-offers {
+  background: #dadada;
+  width: 95%;
+  height: 100%;
+  // max-width: 600px;
+  margin: auto;
+}
+
+.section__gallery-offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.7rem;
+  height: 40vh;
+}
+.section__gallery-offersRoom {
+  z-index: 1;
+}
+
+//Popular rooms
+#bakground__popular {
+  background: #222222;
+  margin-top: 4%;
+}
+
+.card-white {
+  background-color: #ffffff;
+  margin-top: -14%;
+  padding: 16%;
+  width: 95%;
+  height: 40vh;
+}
+
+@media only screen and (min-width: 1000px) {
+  .section__gallery-luxury {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    gap: 3em;
+    align-items: center;
+    position: relative;
+    top: -4rem;
+    padding: 3em;
+    border-top: 6px solid #bead8e;
+    margin-left: 20%;
+  }
+  .section__gallery-offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.7rem;
+    height: 60vh;
+    width: 60%;
+    margin-left: 15%;
+  }
+  .section__gallery-offersRoom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -15%;
+    height: 60vh;
+    width: 60%;
+  }
+  .section__gallery-price {
+    display: block;
+    background-color: #ffff;
+    position: absolute;
+    margin-top: -3em;
+    margin-left: 44%;
+    z-index: 1;
+  }
+
+  .section__text-button-offers {
+    margin-top: 0%;
+    margin-bottom: 5%;
+  }
+
+  .section__gallery-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .section__gallery {
+    margin-top: -12%;
+  }
+
+  .card-white {
+    height: 32vh;
+    margin-top: -20%;
+  }
+}

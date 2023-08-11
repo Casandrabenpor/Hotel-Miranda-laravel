@@ -1,33 +1,11 @@
-
 @extends('layout')
 
 @section('title', 'Rooms details')
 
 @section('content')
-<?php
-include('./database.php');
-$db = new DatabaseConnector();
 
-// Recuperar el valor del parámetro "id" de la URL
-if (isset($_GET['id'])) {
-    $room_id = $_GET['id'];
 
-    // Consulta SQL utilizando el valor del "id" recuperado
-    $sql = "SELECT * FROM rooms WHERE id = $room_id";
-    $result = $db->doSelectQuery($sql);
-  // Si se encontraron resultados, mostrar los detalles de la habitación
-  if ($result && $row = $result[0]) {
-?>
-<?php
-} else {
-    echo "Habitación no encontrada.";
-}
-} else {
-echo "No se proporcionó el identificador de la habitación.";
-}
-?>
-
-<!-- SECTION TITLE -->
+    <!-- SECTION TITLE -->
     <section class="section-title">
         <div class="text__title">
             <div class="title__header">
@@ -48,9 +26,9 @@ echo "No se proporcionó el identificador de la habitación.";
     <section>
         <div class="section__room">
             <div class="section__room-detail">
-                <p class="text__small-section text-gray-color">{{$row['bed_type']}}</p>
+                <p class="text__small-section text-gray-color">{{ $room->bed_type }}</p>
                 <p class="text__big-section">Luxury Double Bed</p>
-                <p class="text__number-room-details text-gray">${{$row['rate']}}</p>
+                <p class="text__number-room-details text-gray">${{ $room->rate }}</p>
                 <img src="../assets/hotel/bed.jpg" class="image-roomDetail" alt="hotel" />
             </div>
             <div class="section__room-detail-calendar">
@@ -92,7 +70,7 @@ echo "No se proporcionó el identificador de la habitación.";
                 modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
         </div>
 
-   
+
 
     </section>
     <!-- SECTION AMENITIES -->
@@ -172,12 +150,12 @@ echo "No se proporcionó el identificador de la habitación.";
                 <div class="section_button-rooms section_button-rooms-detail-btn">
                     <img src="../assets/section rooms/room-button.png" alt="button rooms" />
                 </div>
-                <h4 class="text__room-title text-center text-black">{{$row['bed_type']}}</h4>
+                <h4 class="text__room-title text-center text-black">{{ $room->bed_type }}</h4>
                 <p class="text__room-paragraph text-center text-gray-color">Lorem ipsum dolor sit amet, consectetur
                     adipi
                     sicing elit, sed do eiusmod tempor.</p>
                 <div class="section__gallery-text">
-                    <p class="text__room-price text-gray ">${{$row['offer_price']}}</p>
+                    <p class="text__room-price text-gray ">${{ $room->offer_price }}</p>
                     <p class="text__room-booking "> Booking Now</p>
                 </div>
             </div>
@@ -188,12 +166,12 @@ echo "No se proporcionó el identificador de la habitación.";
                 <div class="section_button-rooms section_button-rooms-detail-btn">
                     <img src="../assets/section rooms/room-button.png" alt="button rooms" />
                 </div>
-                <h4 class="text__room-title text-center text-black">{{$row['bed_type']}}</h4>
+                <h4 class="text__room-title text-center text-black">{{ $room->bed_type }}</h4>
                 <p class="text__room-paragraph text-center text-gray-color">Lorem ipsum dolor sit amet, consectetur
                     adipi
                     sicing elit, sed do eiusmod tempor.</p>
                 <div class="section__gallery-text">
-                    <p class="text__room-price text-gray ">${{$row['offer_price']}}</p>
+                    <p class="text__room-price text-gray ">${{ $room->offer_price }}</p>
                     <p class="text__room-booking "> Booking Now</p>
                 </div>
             </div>
@@ -204,4 +182,4 @@ echo "No se proporcionó el identificador de la habitación.";
 
 
     <script src="../scripts/burger-nav.js"></script>
-    @endsection
+@endsection

@@ -1,6 +1,11 @@
 <?php
 
-use App\Models\Contact;
+
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\OffersController;
+use App\Http\Controllers\RoomController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,8 +24,12 @@ Route::get('/', function () {
 });
 
 
-Route::get('/contact', [ContactController::class, 'showContact']);
-Route::post('/contact', [ContactController::class, 'postContact']);
-Route::get('/about', [AboutController::class, 'showAbout']);
-Route::get('/offer', [OfferController::class, 'showOffer']);
-Route::get('/room', [RoomController::class, 'showRoom']);
+Route::get('/contact', [ContactController::class, 'index']);
+Route::post('/contact', [ContactController::class, 'store']);
+
+Route::get('/about', [AboutController::class, 'index']);
+
+Route::get('/offers', [OffersController::class, 'index']);
+
+Route::get('/rooms', [RoomController::class, 'index']);
+Route::get('/rooms/{id}', [RoomController::class, 'show']);

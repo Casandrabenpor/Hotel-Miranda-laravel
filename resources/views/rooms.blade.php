@@ -4,15 +4,6 @@
 
 @section('content')
 
-    <?php
-    include './database.php';
-    $db = new DatabaseConnector();
-    $sql = 'SELECT * FROM rooms';
-    
-    $result = $db->doSelectQuery($sql);
-    
-    ?>
-
     <!-- SECTION TITLE -->
     <section class="section-title">
         <div class="text__title">
@@ -32,21 +23,21 @@
     </section>
     <!-- SECTION GALLERY -->
     <section id="section__gallery-grid">
-        @foreach ($result as $row)
+        @foreach ($rooms as $room)
             <div class="section__gallery active-img">
                 <img src="../assets/hotel/bed_small.jpg" class="section_image" alt="duplex room" />
                 <div class="section_button-rooms section_button-rooms-btn">
                     <img src="../assets/section rooms/room-button.png" alt="button rooms" />
                 </div>
-                <h4 class="text__room-title text-center text-black">{{ $row['bed_type'] }}</h4>
+                <h4 class="text__room-title text-center text-black">{{ $room->bed_type }}</h4>
                 <p class="text__room-paragraph text-center text-gray-color">Lorem ipsum dolor sit amet, consectetur
                     adipi
                     sicing elit, sed do eiusmod tempor.
                 </p>
                 <div class="section__gallery-text">
-                    <p class="text__room-price text-gray">${{ $row['rate'] }}/Night</p>
+                    <p class="text__room-price text-gray">${{ $room->rate }}/Night</p>
                     <p class="text__room-booking">
-                        <a href="../rooms-details.php?id={{ $row['id'] }}">Booking Now
+                        <a href="../rooms/{{ $room->id }}">Booking Now
                         </a>
                     </p>
 

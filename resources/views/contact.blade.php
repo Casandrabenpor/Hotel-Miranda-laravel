@@ -1,4 +1,3 @@
-
 @extends('layout')
 
 @section('title', 'Contact')
@@ -58,44 +57,43 @@
     <!-- SECTION ENTER CONTACT -->
     <section>
         <form action="" method="post">
-        <div id="contact__form">
+            @csrf
+            <div id="contact__form">
 
-            <div class="contact__form-container">
-                <div class="section__enter-contact ">
-                    <img src="../assets/section-contact/account.png" alt="acount" />
-                    <input type="text" name="name" placeholder="Your full name">
+                <div class="contact__form-container">
+                    <div class="section__enter-contact ">
+                        <img src="../assets/section-contact/account.png" alt="acount" />
+                        <input type="text" name="name" placeholder="Your full name">
+                    </div>
+                </div>
+                <div class="contact__form-container">
+                    <div class="section__enter-contact ">
+                        <img src="../assets/section-contact/email.png" alt="acount" />
+                        <input type="email" name="email" placeholder="Enter email address" />
+                    </div>
+                </div>
+                <div class="contact__form-container">
+                    <div class="section__enter-contact ">
+                        <img src="../assets/section-contact/phone.png" alt="acount" />
+                        <input type="number" name="phone" placeholder="Add phone number" />
+                    </div>
+                </div>
+                <div class="contact__form-container">
+                    <div class="section__enter-contact ">
+                        <img src="../assets/section-contact/subject.png" alt="acount" />
+                        <input type="text" name="subject" placeholder="Enter subject" />
+                    </div>
                 </div>
             </div>
-            <div class="contact__form-container">
-                <div class="section__enter-contact ">
-                    <img src="../assets/section-contact/email.png" alt="acount" />
-                    <input type="email"  name="email" placeholder="Enter email address" />
-                </div>
+            <div class="section__enter-contact ">
+                <img src="../assets/section-contact/pen.png" class="enter_message-pen" alt="acount" />
+                <textarea name="message" class="enter_message" placeholder="Tell us what you need" cols="50" rows="10"></textarea>
             </div>
-            <div class="contact__form-container">
-                <div class="section__enter-contact ">
-                    <img src="../assets/section-contact/phone.png" alt="acount" />
-                    <input type="number" name="phone" placeholder="Add phone number" />
-                </div>
-            </div>
-            <div class="contact__form-container">
-                <div class="section__enter-contact ">
-                    <img src="../assets/section-contact/subject.png" alt="acount" />
-                    <input type="text"  name="subject" placeholder="Enter subject" />
-                </div>
-            </div>
-        </div>
-        <div class="section__enter-contact ">
-            <img src="../assets/section-contact/pen.png" class="enter_message-pen" alt="acount" />
-        <textarea  name="message" class="enter_message" placeholder="Tell us what you need" cols="50" rows="10"></textarea>
-        </div>
 
 
-        <button  type="submit" class="section__text-button text_button text-center button__center">SEND</button>
-    </form>
+            <button type="submit" class="section__text-button text_button text-center button__center">SEND</button>
+        </form>
     </section>
-<script src="../scripts/burger-nav.js"></script>
+    <script src="../scripts/burger-nav.js"></script>
 
 @endsection
-
-

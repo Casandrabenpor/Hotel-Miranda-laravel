@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="{{ url('/css/styles.css') }}" />
     <!-- Incluir jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Incluir Toastr -->
@@ -15,12 +15,13 @@
     <script src="https://kit.fontawesome.com/fef5116784.js" crossorigin="anonymous"></script>
     <title>@yield('title')</title>
 </head>
-  <!-- HEADER -->
-  <body>
-  <header>
+<!-- HEADER -->
+
+<body>
+    <header>
         <div class="nav__container-menu">
             <button class="nav__burger"></button>
-            <a href="../index.php">
+            <a href="./">
                 <div class="nav__logo">
                     <div class="nav__container-logo">
                         <img src="../assets/nav/logo.png" alt="logo" />
@@ -31,21 +32,21 @@
 
         </div>
         <ul class="nav">
-            <li class="nav-link heartbeat"><a href="./about.php">About Us</a></li>
-            <li class="nav-link heartbeat"><a href="./rooms.php">Rooms</a></li>
-            <li class="nav-link heartbeat"><a href="./offers.php">Offers</a></li>
-            <li class="nav-link heartbeat"><a href="./contact.php">Contact</a></li>
+            <li class="nav-link heartbeat"><a href="/about">About Us</a></li>
+            <li class="nav-link heartbeat"><a href="/rooms">Rooms</a></li>
+            <li class="nav-link heartbeat"><a href="/offers">Offers</a></li>
+            <li class="nav-link heartbeat"><a href="/contact">Contact</a></li>
         </ul>
         <div class="nav__icons">
             <img src="../assets/nav/human.png" alt="human icon" />
             <img src="../assets/nav/search.png" alt="search" />
         </div>
     </header>
-<!-- CONTENT -->
-@yield('content')
+    <!-- CONTENT -->
+    @yield('content')
 
-      <!-- FOOTER -->
-      <footer>
+    <!-- FOOTER -->
+    <footer>
         <div id="options_footer">
             <div class="options__footer">
                 <img src="../assets/footer/Logo footer.png" alt="hotel Miranda" />
@@ -93,5 +94,6 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-  </body>
+</body>
+
 </html>

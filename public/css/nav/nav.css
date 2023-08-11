@@ -1,0 +1,116 @@
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  background: #FFFFFF;
+  z-index: 2;
+  position: fixed;
+}
+
+.nav__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30px;
+  gap: 13%;
+}
+
+.nav__container-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav__container-logo {
+  padding: 12px;
+  width: 35.96px;
+  height: 36px;
+  box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 175px;
+  left: -100%;
+  top: 55px;
+  position: absolute;
+  background-color: white;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-family: "Archivo";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.nav-link {
+  list-style: none;
+}
+
+.nav__burger {
+  background-image: url("../../assets/nav/buttonNav.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 13px;
+  border: none;
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
+
+.nav__burger--close {
+  background-image: url("../../assets/nav/cross.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 15.56px;
+  border: none;
+  background-color: transparent;
+}
+
+.nav-active {
+  left: 0;
+  z-index: 1;
+}
+
+.nav__icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30%;
+  position: absolute;
+  right: 0;
+}
+
+@media only screen and (min-width: 1000px) {
+  header {
+    width: 70%;
+    margin: 3rem 15% 0 15%;
+    z-index: 2;
+  }
+  .nav-link {
+    list-style: none;
+    z-index: 1;
+    display: inline-block;
+  }
+  .nav__burger {
+    display: none;
+  }
+  .nav {
+    left: 0px;
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: static;
+    background-color: transparent;
+  }
+}/*# sourceMappingURL=nav.css.map */

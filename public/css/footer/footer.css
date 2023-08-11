@@ -1,0 +1,38 @@
+@charset "UTF-8";
+#options_footer {
+  background-image: url("../../assets/footer/Rectángulo.png");
+  width: 95%;
+  margin: auto;
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer_services {
+  display: flex;
+  padding: 5%;
+}
+#footer_services ul {
+  list-style-type: none;
+}
+
+.footer__contact {
+  padding: 5%;
+}
+
+@media only screen and (min-width: 1000px) {
+  #options_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #options_footer .options__footer {
+    width: 50%;
+  }
+  .options__footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,436 @@
+.section__title-home {
+  // background: #333333;
+  background-image: url(../../assets/hotel/portada.jpg);
+  padding: 2rem;
+  background-size: 100% 100%;
+}
+
+.subtitle-home {
+  display: none;
+}
+
+.button-home {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-left: 19%;
+  margin-top: -2%;
+}
+
+.section__calendar-home {
+  margin-top: 10%;
+  background: #222222;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  padding: 2rem;
+
+  input {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    border-bottom: 2px solid #bead8e;
+    color: #686868;
+    background-color: #222222;
+    margin-top: 1rem;
+    margin-left: 2%;
+    width: 100%;
+    flex-direction: row-reverse;
+    gap: 1em;
+  }
+}
+
+.home__about-container {
+  margin-left: 5%;
+}
+
+.section_image-home {
+  background: #dadada;
+  width: 70%;
+  height: 40vh;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.about__grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.about__container-cardsSecond {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.img_about {
+  width: 70%;
+  height: 35vh;
+}
+
+.section__about-cards {
+  margin-top: 15%;
+}
+
+.section__about-cards2 {
+  background-color: #222222;
+  text-align: center;
+  width: 70%;
+  height: 40vh;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.section_image-slide {
+  background: #dadada;
+  width: 118%;
+  height: 40vh;
+}
+
+.section__card-container {
+  background-color: #ffffff;
+  margin-top: -1rem;
+}
+
+.section__gallery-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.7rem;
+  position: relative;
+
+  .section_button-rooms-home {
+    display: flex;
+    flex-direction: row;
+    margin-top: -1.8rem;
+    justify-content: flex-end;
+    z-index: 1;
+    position: absolute;
+  }
+}
+
+//video container
+.video__container {
+  background-color: #222222;
+  padding: 5%;
+}
+
+.video__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.position__icon {
+  position: relative;
+  top: 4%;
+  right: 42%;
+}
+
+.position__pretitle {
+  margin-top: 9%;
+}
+
+.position__icon-second {
+  position: absolute;
+  right: -2.5rem;
+  width: 30%;
+  height: 20vh;
+  top: 2rem;
+}
+
+// section menu
+.section__menu {
+  position: relative;
+  padding: 18rem 2rem 0 2rem;
+}
+
+.position__text-homeSecond {
+  margin-right: 80%;
+}
+
+//MENU SLIDER
+.menu__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 9%;
+}
+
+.menu__item {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 1.5rem;
+
+  img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu__button {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: flex-end;
+  margin-bottom: 10%;
+
+  button {
+    border: none;
+  }
+}
+
+.background__icons {
+  background-color: #222222;
+  margin-top: 15%;
+  padding: 1%;
+  margin-bottom: 10%;
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .background__icons-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.gallery-home {
+  display: flex;
+  flex-direction: column;
+}
+
+//animation
+
+.rotate-center {
+  /* Estilos iniciales sin animación */
+  transform: rotate(0);
+  opacity: 1;
+
+  /* Aplica la animación al pasar el mouse */
+  transition: transform 0.6s ease-out;
+}
+
+.rotate-center:hover {
+  /* Establece los estilos de animación al pasar el mouse */
+  animation: rotate-center-animation 0.8s infinite;
+}
+
+@keyframes rotate-center-animation {
+  /* Definición de la animación */
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.not-swiper-features {
+  display: none;
+}
+
+.not-swiper-gallery {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .button-home {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section__title-home {
+    padding: 0;
+  }
+
+  .title-index {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 18%;
+  }
+
+  .section__calendar-home {
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    text-align: left;
+    align-items: center;
+    gap: 9em;
+    justify-content: center;
+
+    input {
+      width: 200%;
+    }
+  }
+
+  .section__calendar-date {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subtitle-home {
+    background-color: #222222;
+    display: inline-block;
+    height: 2em;
+    width: 100%;
+    padding: 0.5rem 0 0 15%;
+  }
+
+  .about__container {
+    width: 40%;
+  }
+
+  .about__container-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 1em;
+    margin-left: 25%;
+  }
+
+  .section__about-cards {
+    text-align: center;
+  }
+
+  .about__container-cardsSecond {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25%;
+    gap: 2em;
+  }
+  .team_person {
+    margin-right: 50%;
+  }
+
+  .section_image-slide {
+    width: 50%;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+  .text__video-titleHome {
+    width: 46%;
+  }
+
+  .text__video-paragraph {
+    width: 42%;
+  }
+
+  //cards text
+  .home__cards-txt {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .about__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+  }
+
+  .gallery-home {
+    display: flex;
+    flex-direction: row;
+  }
+
+  //video container
+  .video__container {
+    background: linear-gradient(90deg, #222222 70%, #bead8e 60%);
+  }
+
+  .video__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  iframe {
+    width: 250%;
+    margin-top: 5%;
+    margin-left: -180%;
+    height: 40vh;
+  }
+
+  //Features
+  .section__gallery-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  .background__icons {
+    height: 40vh;
+    width: 70%;
+    margin: 12rem;
+
+    .icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  .swiper-slide {
+    flex-shrink: unset;
+  }
+
+  //Aplicamos valor 0 a los que queremos que tengan slider en ordenador
+  .section__gallery-home,
+  .menu-slide-gallery {
+    flex-shrink: 0;
+  }
+
+  .background__icons-position {
+    margin-top: 1%;
+  }
+
+  .position__icon-second {
+    left: 0;
+    width: 12%;
+    height: 20vh;
+  }
+
+  //prueba test
+  .dynamic-swiper {
+    display: none;
+  }
+
+  .not-swiper-features {
+    display: flex;
+    margin-left: 3%;
+    margin-top: 5%;
+    width: 70%;
+    margin: 12rem;
+  }
+
+  .not-swiper-gallery {
+    display: grid;
+  }
+}
