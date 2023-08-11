@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // \App\Models\User::factory(10)->create();
-        \DB::unprepared(file_get_contents('./hotel_miranda.sql'));
+        \DB::unprepared(file_get_contents('./seed.sql'));
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
