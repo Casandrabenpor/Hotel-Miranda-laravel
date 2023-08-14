@@ -33,3 +33,5 @@ Route::get('/offers', [OffersController::class, 'index']);
 
 Route::get('/rooms', [RoomController::class, 'index']);
 Route::get('/rooms/{id}', [RoomController::class, 'show']);
+
+require __DIR__ . '/auth.php';
