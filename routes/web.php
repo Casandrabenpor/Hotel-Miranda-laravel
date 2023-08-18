@@ -2,9 +2,9 @@
 
 
 use App\Http\Controllers\AboutController;
-use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\OffersController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\RoomController;
 use Illuminate\Support\Facades\Route;
 
@@ -33,5 +33,7 @@ Route::get('/offers', [OffersController::class, 'index']);
 
 Route::get('/rooms', [RoomController::class, 'index']);
 Route::get('/rooms/{id}', [RoomController::class, 'show']);
+
+Route::get('/order', [OrderController::class, 'index']);
 
 require __DIR__ . '/auth.php';
